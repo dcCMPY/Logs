@@ -1,482 +1,179 @@
-2021-10-16 18:39:43 - INFO    :: MainThread : Starting Tautulli v2.7.7
-2021-10-16 18:39:43 - INFO    :: MainThread : [Docker] Linux 3.10.105 (#24922 SMP Wed Jul 3 16:34:56 CST 2019)
-2021-10-16 18:39:43 - INFO    :: MainThread : Australia/Melbourne (UTC+1100)
-2021-10-16 18:39:43 - INFO    :: MainThread : Python 3.8.10 (default, May  6 2021, 00:05:59) [GCC 10.2.1 20201203]
-2021-10-16 18:39:43 - INFO    :: MainThread : Program Dir: /app/tautulli
-2021-10-16 18:39:43 - INFO    :: MainThread : Config File: /config/config.ini
-2021-10-16 18:39:43 - INFO    :: MainThread : Database File: /config/tautulli.db
-2021-10-16 18:39:43 - INFO    :: MainThread : Checking if the database upgrades are required...
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Altering database. Updating database table sessions.
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Altering database. Updating database table notify_log.
-2021-10-16 18:39:44 - DEBUG   :: MainThread : User 'Local' does not exist. Adding user.
-2021-10-16 18:39:44 - INFO    :: MainThread : Checking if configuration upgrades are required...
-2021-10-16 18:39:44 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Generating UUID...
-2021-10-16 18:39:44 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Generating API key...
-2021-10-16 18:39:44 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Generating JWT secret...
-2021-10-16 18:39:44 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
-2021-10-16 18:39:44 - INFO    :: MainThread : Retrieving latest version information from GitHub
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/commits/master
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Latest version is 5f22ad26ad52fbf7881aac988a59853a2bde9887
-2021-10-16 18:39:44 - INFO    :: MainThread : Comparing currently installed version with latest GitHub version
-2021-10-16 18:39:44 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/compare/v2.7.7...5f22ad26ad52fbf7881aac988a59853a2bde9887
-2021-10-16 18:39:45 - DEBUG   :: MainThread : In total, 0 commits behind
-2021-10-16 18:39:45 - INFO    :: MainThread : Tautulli is up to date
-2021-10-16 18:39:45 - INFO    :: MainThread : Tautulli NotificationHandler :: Starting background notification handler (2 threads).
-2021-10-16 18:39:46 - INFO    :: MainThread : Tautulli WebStart :: Initializing Tautulli web server...
-2021-10-16 18:39:46 - INFO    :: MainThread : Tautulli WebStart :: Thread Pool Size: 10.
-2021-10-16 18:39:46 - INFO    :: MainThread : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
-2021-10-16 18:39:46 - INFO    :: MainThread : [16/Oct/2021:18:39:46] ENGINE Serving on http://0.0.0.0:8181
-2021-10-16 18:39:46 - INFO    :: MainThread : Tautulli is ready!
-2021-10-16 18:41:52 - INFO    :: CP Server Thread-11 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:42:41 - INFO    :: CP Server Thread-6 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:42:41 - INFO    :: CP Server Thread-6 : Tautulli PlexTV :: Requesting resources for server...
-2021-10-16 18:42:43 - DEBUG   :: CP Server Thread-6 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli PlexTV :: Using user-defined URL.
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli PlexTV :: Selected server: S-DS716 (http://192.168.1.129:32400) (Linux - Version 1.24.2.4973-2b1b51db9)
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Restarting Tautulli web server...
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Stopping Tautulli web server...
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE Bus STOPPING
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE Bus STOPPED
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE Bus EXITING
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE Bus EXITED
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Initializing Tautulli web server...
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Web server authentication is enabled: Tautulli admin (username is 'admin') and Plex admin.
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Thread Pool Size: 10.
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : [16/Oct/2021:18:42:43] ENGINE Serving on http://0.0.0.0:8181
-2021-10-16 18:42:43 - DEBUG   :: CP Server Thread-6 : Tautulli Monitor :: Checking for active streams.
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Tautulli WebSocket :: Opening websocket.
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Scheduled background task: Check GitHub for updates
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Scheduled background task: Optimize Tautulli database
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Scheduled background task: Backup Tautulli database
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Scheduled background task: Backup Tautulli config
-2021-10-16 18:42:43 - INFO    :: CP Server Thread-6 : Scheduled background task: Check for server response
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Tautulli WebSocket :: Ready
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Scheduled background task: Refresh Plex server URLs
-2021-10-16 18:42:43 - INFO    :: Thread-27 : Tautulli Libraries :: Requesting libraries list refresh...
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Scheduled background task: Refresh users list
-2021-10-16 18:42:43 - INFO    :: Thread-28 : Tautulli Users :: Requesting users list refresh...
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Scheduled background task: Refresh libraries list
-2021-10-16 18:42:43 - INFO    :: Thread-26 : Removed background task: Check for server response
-2021-10-16 18:42:43 - INFO    :: Thread-27 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:42:43 - INFO    :: Thread-27 : Tautulli Libraries :: Libraries list refreshed.
-2021-10-16 18:42:45 - INFO    :: Thread-28 : Tautulli Users :: Users list refreshed.
-2021-10-16 18:43:26 - DEBUG   :: CP Server Thread-24 : Tautulli WebAuth :: Admin user ****************@********' logged into Tautulli using Plex OAuth login.
-2021-10-16 18:43:27 - INFO    :: CP Server Thread-24 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:43:28 - WARNING :: CP Server Thread-23 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 18:43:29 - WARNING :: CP Server Thread-17 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 18:43:29 - WARNING :: CP Server Thread-18 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 18:43:29 - WARNING :: CP Server Thread-22 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 18:43:44 - WARNING :: CP Server Thread-20 : Unable to retrieve data for library_user_stats.
-2021-10-16 18:43:44 - WARNING :: CP Server Thread-21 : Unable to retrieve data for library_recently_watched.
-2021-10-16 18:43:45 - WARNING :: CP Server Thread-23 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 18:43:45 - WARNING :: CP Server Thread-18 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 18:43:45 - WARNING :: CP Server Thread-17 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 18:43:45 - WARNING :: CP Server Thread-6 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 18:48:08 - DEBUG   :: CP Server Thread-19 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 18:48:08 - INFO    :: CP Server Thread-19 : Tautulli Config :: Writing configuration to file
-2021-10-16 18:48:56 - INFO    :: CP Server Thread-21 : Tautulli Notifiers :: Added new notification agent: Script (notifier_id 1).
-2021-10-16 19:11:31 - INFO    :: CP Server Thread-18 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:12:20 - INFO    :: CP Server Thread-17 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:15:35 - INFO    :: CP Server Thread-19 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:16:07 - INFO    :: CP Server Thread-18 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:18:21 - INFO    :: CP Server Thread-17 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:18:59 - WARNING :: CP Server Thread-17 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 19:18:59 - WARNING :: CP Server Thread-20 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 19:18:59 - WARNING :: CP Server Thread-24 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 19:18:59 - WARNING :: CP Server Thread-19 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 19:24:38 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 started by user 26731653 (****************@********) with ratingKey 2123 (Afl Making Their Mark - Episode 5).
-2021-10-16 19:24:42 - WARNING :: CP Server Thread-19 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 19:24:42 - WARNING :: CP Server Thread-20 : Failed to get image /library/metadata/2123/art, falling back to art.
-2021-10-16 19:24:45 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 is buffering.
-2021-10-16 19:24:45 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 buffer count is 1.
-2021-10-16 19:24:45 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 has changed transcode decision.
-2021-10-16 19:24:45 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 paused.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-23 : Failed to get image /library/metadata/2123/art, falling back to art.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-6 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-25 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-24 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-17 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 19:26:25 - WARNING :: CP Server Thread-22 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 19:26:43 - DEBUG   :: CP Server Thread-19 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 19:26:43 - INFO    :: CP Server Thread-19 : Tautulli Config :: Writing configuration to file
-2021-10-16 19:27:09 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:27:21 - INFO    :: CP Server Thread-21 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:28:24 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:29:26 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Session 1 stopped.
-2021-10-16 19:29:26 - DEBUG   :: Thread-26 : Tautulli ActivityProcessor :: Play duration for session 1 ratingKey 2123 is 7 secs which is less than 120 seconds, so we're not logging it.
-2021-10-16 19:29:26 - DEBUG   :: Thread-26 : Tautulli ActivityHandler :: Removing sessionKey 1 ratingKey 2123 from session queue
-2021-10-16 19:30:55 - INFO    :: CP Server Thread-18 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:30:55 - DEBUG   :: CP Server Thread-22 : Sending test Script notification.
-2021-10-16 19:30:55 - DEBUG   :: CP Server Thread-22 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 19:30:55 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 19:30:55 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: , arguments: ['--rating_key', '{rating_key}', '--blur', '25'], action: test
-2021-10-16 19:30:55 - DEBUG   :: Thread-3 : Tautulli Notifiers :: No script selected for action 'test', exiting...
-2021-10-16 19:31:08 - INFO    :: CP Server Thread-19 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:31:12 - INFO    :: CP Server Thread-20 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:31:32 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:32:43 - DEBUG   :: Thread-26 : Tautulli TimelineHandler :: Library item 'Loki' (2167) added to recently added queue.
-2021-10-16 19:32:43 - DEBUG   :: Thread-26 : Tautulli TimelineHandler :: Library item 'Season 1' (2168 , parent 2167) added to recently added queue.
-2021-10-16 19:32:43 - DEBUG   :: Thread-26 : Tautulli TimelineHandler :: Library item 'Loki S01 E01' (2169, grandparent 2167) added to recently added queue.
-2021-10-16 19:33:07 - DEBUG   :: Thread-26 : Tautulli TimelineHandler :: Library item 'Loki' (2167) done processing metadata.
-2021-10-16 19:37:43 - DEBUG   :: Thread-29 : Tautulli TimelineHandler :: Starting callback for library item 'Loki' (2167) after delay.
-2021-10-16 19:37:43 - DEBUG   :: Thread-29 : Tautulli TimelineHandler :: Library item 'Loki - Glorious Purpose' (2169) added to Plex.
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'on_created'.
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Checking global notification conditions.
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Global notification conditions evaluated to 'True'.
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Checking custom notification conditions for notifier_id 1.
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: {1} media_type | is | 'show or season or episode' > 'episode' > False
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Condition logic [blank]: {1} > False
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Custom conditions evaluated to 'False'. Conditions: [False].
-2021-10-16 19:37:43 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Custom notification conditions not satisfied, skipping notifier_id 1.
-2021-10-16 19:37:43 - DEBUG   :: Thread-29 : Added 1 items to the recently_added database table.
-2021-10-16 19:39:10 - INFO    :: CP Server Thread-18 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:39:57 - INFO    :: CP Server Thread-20 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:55:44 - INFO    :: CP Server Thread-17 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 19:55:59 - INFO    :: MainThread : Received signal: restart
-2021-10-16 19:55:59 - INFO    :: MainThread : Tautulli WebStart :: Stopping Tautulli web server...
-2021-10-16 19:55:59 - INFO    :: MainThread : [16/Oct/2021:19:55:59] ENGINE Bus STOPPING
-2021-10-16 19:55:59 - INFO    :: MainThread : [16/Oct/2021:19:55:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
-2021-10-16 19:55:59 - INFO    :: MainThread : [16/Oct/2021:19:55:59] ENGINE Bus STOPPED
-2021-10-16 19:55:59 - INFO    :: MainThread : [16/Oct/2021:19:55:59] ENGINE Bus EXITING
-2021-10-16 19:55:59 - INFO    :: MainThread : [16/Oct/2021:19:55:59] ENGINE Bus EXITED
-2021-10-16 19:55:59 - INFO    :: MainThread : Tautulli WebSocket :: Disconnecting websocket...
-2021-10-16 19:55:59 - DEBUG   :: Thread-26 : Tautulli WebSocket :: Leaving thread.
-2021-10-16 19:55:59 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Notification thread exiting...
-2021-10-16 19:55:59 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Notification thread exiting...
-2021-10-16 19:55:59 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
-2021-10-16 19:55:59 - INFO    :: MainThread : Tautulli is restarting...
-2021-10-16 19:55:59 - INFO    :: MainThread : Restarting Tautulli with ['/usr/bin/python3', '/app/tautulli/Tautulli.py', '--datadir', '/config', '--nolaunch']
-2021-10-16 19:56:03 - INFO    :: MainThread : Starting Tautulli v2.7.7
-2021-10-16 19:56:03 - INFO    :: MainThread : [Docker] Linux 3.10.105 (#24922 SMP Wed Jul 3 16:34:56 CST 2019)
-2021-10-16 19:56:03 - INFO    :: MainThread : Australia/Melbourne (UTC+1100)
-2021-10-16 19:56:03 - INFO    :: MainThread : Python 3.8.10 (default, May  6 2021, 00:05:59) [GCC 10.2.1 20201203]
-2021-10-16 19:56:03 - INFO    :: MainThread : Program Dir: /app/tautulli
-2021-10-16 19:56:03 - INFO    :: MainThread : Config File: /config/config.ini
-2021-10-16 19:56:03 - INFO    :: MainThread : Database File: /config/tautulli.db
-2021-10-16 19:56:03 - INFO    :: MainThread : Checking if the database upgrades are required...
-2021-10-16 19:56:03 - INFO    :: MainThread : Checking if configuration upgrades are required...
-2021-10-16 19:56:03 - INFO    :: MainThread : Retrieving latest version information from GitHub
-2021-10-16 19:56:03 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/commits/master
-2021-10-16 19:56:04 - DEBUG   :: MainThread : Latest version is 5f22ad26ad52fbf7881aac988a59853a2bde9887
-2021-10-16 19:56:04 - INFO    :: MainThread : Comparing currently installed version with latest GitHub version
-2021-10-16 19:56:04 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/compare/v2.7.7...5f22ad26ad52fbf7881aac988a59853a2bde9887
-2021-10-16 19:56:04 - DEBUG   :: MainThread : In total, 0 commits behind
-2021-10-16 19:56:04 - INFO    :: MainThread : Tautulli is up to date
-2021-10-16 19:56:04 - INFO    :: Thread-1 : Tautulli PlexTV :: Requesting resources for server...
-2021-10-16 19:56:04 - INFO    :: MainThread : Tautulli NotificationHandler :: Starting background notification handler (2 threads).
-2021-10-16 19:56:05 - INFO    :: MainThread : Tautulli WebStart :: Initializing Tautulli web server...
-2021-10-16 19:56:05 - INFO    :: MainThread : Tautulli WebStart :: Web server authentication is enabled: Tautulli admin (username is 'admin') and Plex admin.
-2021-10-16 19:56:05 - INFO    :: MainThread : Tautulli WebStart :: Thread Pool Size: 10.
-2021-10-16 19:56:05 - INFO    :: MainThread : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
-2021-10-16 19:56:05 - INFO    :: MainThread : [16/Oct/2021:19:56:05] ENGINE Serving on http://0.0.0.0:8181
-2021-10-16 19:56:05 - INFO    :: MainThread : Tautulli is ready!
-2021-10-16 19:56:06 - DEBUG   :: Thread-1 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 19:56:06 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
-2021-10-16 19:56:06 - INFO    :: Thread-1 : Tautulli PlexTV :: Using user-defined URL.
-2021-10-16 19:56:06 - INFO    :: Thread-1 : Tautulli PlexTV :: Selected server: S-DS716 (http://192.168.1.129:32400) (Linux - Version 1.24.2.4973-2b1b51db9)
-2021-10-16 19:56:06 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
-2021-10-16 19:56:06 - DEBUG   :: Thread-1 : Tautulli Monitor :: Checking for active streams.
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Tautulli WebSocket :: Opening websocket.
-2021-10-16 19:56:06 - INFO    :: Thread-1 : Tautulli Users :: Requesting users list refresh...
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Tautulli WebSocket :: Ready
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Check GitHub for updates
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Optimize Tautulli database
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Backup Tautulli database
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Backup Tautulli config
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Refresh Plex server URLs
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Refresh users list
-2021-10-16 19:56:06 - INFO    :: Thread-15 : Scheduled background task: Refresh libraries list
-2021-10-16 19:56:08 - WARNING :: CP Server Thread-7 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 19:56:08 - WARNING :: CP Server Thread-11 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 19:56:08 - WARNING :: CP Server Thread-10 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 19:56:08 - WARNING :: CP Server Thread-12 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 19:56:08 - INFO    :: Thread-1 : Tautulli Users :: Users list refreshed.
-2021-10-16 19:56:08 - INFO    :: Thread-1 : Tautulli Libraries :: Requesting libraries list refresh...
-2021-10-16 19:56:08 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
-2021-10-16 19:56:08 - INFO    :: Thread-1 : Tautulli Libraries :: Libraries list refreshed.
-2021-10-16 19:59:51 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki S01 E02' (2170, grandparent 2167) added to recently added queue.
-2021-10-16 20:00:02 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki' (2167) done processing metadata.
-2021-10-16 20:00:33 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 2 started by user 26731653 (****************@********) with ratingKey 2170 (Loki - The Variant).
-2021-10-16 20:00:44 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 2 has changed transcode decision.
-2021-10-16 20:04:51 - DEBUG   :: Thread-16 : Tautulli TimelineHandler :: Starting callback for library item 'Loki S01 E02' (2167) after delay.
-2021-10-16 20:04:51 - DEBUG   :: Thread-16 : Tautulli TimelineHandler :: Library item 'Loki - The Variant' (2170) added to Plex.
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'on_created'.
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Checking global notification conditions.
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Global notification conditions evaluated to 'True'.
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Checking custom notification conditions for notifier_id 1.
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: {1} media_type | is | 'show or season or episode' > 'episode' > False
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Condition logic [blank]: {1} > False
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Custom conditions evaluated to 'False'. Conditions: [False].
-2021-10-16 20:04:51 - DEBUG   :: Thread-2 : Tautulli NotificationHandler :: Custom notification conditions not satisfied, skipping notifier_id 1.
-2021-10-16 20:04:51 - DEBUG   :: Thread-16 : Added 1 items to the recently_added database table.
-2021-10-16 20:05:34 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 2 paused.
-2021-10-16 20:05:58 - DEBUG   :: CP Server Thread-14 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 20:05:58 - INFO    :: CP Server Thread-14 : Tautulli Config :: Writing configuration to file
-2021-10-16 20:07:27 - INFO    :: CP Server Thread-8 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:08:36 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:09:06 - INFO    :: CP Server Thread-10 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:09:06 - DEBUG   :: CP Server Thread-8 : Sending test Script notification.
-2021-10-16 20:09:06 - DEBUG   :: CP Server Thread-8 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 20:09:06 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 20:09:06 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{rating_key}', '--blur', '25'], action: test
-2021-10-16 20:09:06 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{rating_key}', '--blur', '25']
-2021-10-16 20:09:06 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 20:09:07 - DEBUG   :: Thread-17 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 20:09:07 - ERROR   :: Thread-17 : Tautulli Notifiers :: Script error: 
+2021-10-16 22:56:23 - INFO    :: Thread-80 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:57:54 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:57:54 - DEBUG   :: CP Server Thread-12 : Sending test Script notification.
+2021-10-16 22:57:54 - DEBUG   :: CP Server Thread-12 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 22:57:54 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 22:57:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2174', '--', 'blur'], action: test
+2021-10-16 22:57:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2174', '--', 'blur']
+2021-10-16 22:57:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 22:57:55 - DEBUG   :: Thread-82 : Tautulli Notifiers :: Subprocess returned with status code 2.
+2021-10-16 22:57:55 - ERROR   :: Thread-82 : Tautulli Notifiers :: Script error: 
+  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
+                                  [--blur BLUR]
+                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
+  hide_episode_spoilers.py: error: unrecognized arguments: -- blur
+2021-10-16 22:57:55 - INFO    :: Thread-82 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:58:02 - INFO    :: CP Server Thread-13 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:58:03 - DEBUG   :: CP Server Thread-11 : Sending test Script notification.
+2021-10-16 22:58:03 - DEBUG   :: CP Server Thread-11 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 22:58:03 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 22:58:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2174', '--blur'], action: test
+2021-10-16 22:58:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2174', '--blur']
+2021-10-16 22:58:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 22:58:03 - DEBUG   :: Thread-84 : Tautulli Notifiers :: Subprocess returned with status code 2.
+2021-10-16 22:58:03 - ERROR   :: Thread-84 : Tautulli Notifiers :: Script error: 
+  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
+                                  [--blur BLUR]
+                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
+  hide_episode_spoilers.py: error: argument --blur: expected one argument
+2021-10-16 22:58:03 - INFO    :: Thread-84 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:58:16 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:58:16 - DEBUG   :: CP Server Thread-12 : Sending test Script notification.
+2021-10-16 22:58:16 - DEBUG   :: CP Server Thread-12 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 22:58:17 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 22:58:17 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2174', '--blur:25'], action: test
+2021-10-16 22:58:17 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2174', '--blur:25']
+2021-10-16 22:58:17 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 22:58:17 - DEBUG   :: Thread-86 : Tautulli Notifiers :: Subprocess returned with status code 2.
+2021-10-16 22:58:17 - ERROR   :: Thread-86 : Tautulli Notifiers :: Script error: 
+  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
+                                  [--blur BLUR]
+                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
+  hide_episode_spoilers.py: error: unrecognized arguments: --blur:25
+2021-10-16 22:58:17 - INFO    :: Thread-86 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:58:25 - INFO    :: CP Server Thread-9 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:58:26 - DEBUG   :: CP Server Thread-10 : Sending test Script notification.
+2021-10-16 22:58:26 - DEBUG   :: CP Server Thread-10 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 22:58:26 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 22:58:26 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2174', '--blur', '25'], action: test
+2021-10-16 22:58:26 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2174', '--blur', '25']
+2021-10-16 22:58:26 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 22:58:27 - DEBUG   :: Thread-88 : Tautulli Notifiers :: Subprocess returned with status code 1.
+2021-10-16 22:58:27 - ERROR   :: Thread-88 : Tautulli Notifiers :: Script error: 
+  Traceback (most recent call last):
+    File "/config/scripts/hide_episode_spoilers.py", line 122, in <module>
+      with open(episode_artwork, 'wb') as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/volume1/Plex/Library/TV Shows/Loki/Loki S01E06.png'
+2021-10-16 22:58:27 - INFO    :: Thread-88 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:59:00 - INFO    :: CP Server Thread-13 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:59:06 - INFO    :: CP Server Thread-11 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 22:59:06 - DEBUG   :: CP Server Thread-9 : Sending test Script notification.
+2021-10-16 22:59:06 - DEBUG   :: CP Server Thread-9 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 22:59:06 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 22:59:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2174', '--blur', '25'], action: test
+2021-10-16 22:59:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2174', '--blur', '25']
+2021-10-16 22:59:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 22:59:07 - DEBUG   :: Thread-90 : Tautulli Notifiers :: Subprocess returned with status code 1.
+2021-10-16 22:59:07 - ERROR   :: Thread-90 : Tautulli Notifiers :: Script error: 
+  Traceback (most recent call last):
+    File "/config/scripts/hide_episode_spoilers.py", line 122, in <module>
+      with open(episode_artwork, 'wb') as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/volume1/Plex/Library/TV Shows/Loki/Loki S01E06.png'
+2021-10-16 22:59:07 - INFO    :: Thread-90 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 22:59:59 - INFO    :: MainThread : Received signal: restart
+2021-10-16 22:59:59 - INFO    :: MainThread : Tautulli WebStart :: Stopping Tautulli web server...
+2021-10-16 22:59:59 - INFO    :: MainThread : [16/Oct/2021:22:59:59] ENGINE Bus STOPPING
+2021-10-16 22:59:59 - INFO    :: MainThread : [16/Oct/2021:22:59:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8181)) shut down
+2021-10-16 22:59:59 - INFO    :: MainThread : [16/Oct/2021:22:59:59] ENGINE Bus STOPPED
+2021-10-16 22:59:59 - INFO    :: MainThread : [16/Oct/2021:22:59:59] ENGINE Bus EXITING
+2021-10-16 22:59:59 - INFO    :: MainThread : [16/Oct/2021:22:59:59] ENGINE Bus EXITED
+2021-10-16 22:59:59 - INFO    :: MainThread : Tautulli WebSocket :: Disconnecting websocket...
+2021-10-16 22:59:59 - DEBUG   :: Thread-15 : Tautulli WebSocket :: Leaving thread.
+2021-10-16 22:59:59 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Notification thread exiting...
+2021-10-16 22:59:59 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Notification thread exiting...
+2021-10-16 22:59:59 - INFO    :: MainThread : Tautulli Config :: Writing configuration to file
+2021-10-16 22:59:59 - INFO    :: MainThread : Tautulli is restarting...
+2021-10-16 22:59:59 - INFO    :: MainThread : Restarting Tautulli with ['/usr/bin/python3', '/app/tautulli/Tautulli.py', '--datadir', '/config', '--nolaunch']
+2021-10-16 23:00:02 - INFO    :: MainThread : Starting Tautulli v2.7.7
+2021-10-16 23:00:02 - INFO    :: MainThread : [Docker] Linux 3.10.105 (#24922 SMP Wed Jul 3 16:34:56 CST 2019)
+2021-10-16 23:00:02 - INFO    :: MainThread : Australia/Melbourne (UTC+1100)
+2021-10-16 23:00:02 - INFO    :: MainThread : Python 3.8.10 (default, May  6 2021, 00:05:59) [GCC 10.2.1 20201203]
+2021-10-16 23:00:02 - INFO    :: MainThread : Program Dir: /app/tautulli
+2021-10-16 23:00:02 - INFO    :: MainThread : Config File: /config/config.ini
+2021-10-16 23:00:02 - INFO    :: MainThread : Database File: /config/tautulli.db
+2021-10-16 23:00:02 - INFO    :: MainThread : Checking if the database upgrades are required...
+2021-10-16 23:00:02 - INFO    :: MainThread : Checking if configuration upgrades are required...
+2021-10-16 23:00:02 - INFO    :: MainThread : Retrieving latest version information from GitHub
+2021-10-16 23:00:02 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/commits/master
+2021-10-16 23:00:03 - DEBUG   :: MainThread : Latest version is 5f22ad26ad52fbf7881aac988a59853a2bde9887
+2021-10-16 23:00:03 - INFO    :: MainThread : Comparing currently installed version with latest GitHub version
+2021-10-16 23:00:03 - DEBUG   :: MainThread : Requesting URL via GET method: https://api.github.com/repos/Tautulli/Tautulli/compare/v2.7.7...5f22ad26ad52fbf7881aac988a59853a2bde9887
+2021-10-16 23:00:04 - DEBUG   :: MainThread : In total, 0 commits behind
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli is up to date
+2021-10-16 23:00:04 - INFO    :: Thread-1 : Tautulli PlexTV :: Requesting resources for server...
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli NotificationHandler :: Starting background notification handler (2 threads).
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli WebStart :: Initializing Tautulli web server...
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli WebStart :: Web server authentication is enabled: Tautulli admin (username is 'admin') and Plex admin.
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli WebStart :: Thread Pool Size: 10.
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli WebStart :: Starting Tautulli web server on http://0.0.0.0:8181/
+2021-10-16 23:00:04 - INFO    :: MainThread : [16/Oct/2021:23:00:04] ENGINE Serving on http://0.0.0.0:8181
+2021-10-16 23:00:04 - INFO    :: MainThread : Tautulli is ready!
+2021-10-16 23:00:06 - DEBUG   :: Thread-1 : Tautulli PlexTV :: Plex Pass subscription not found.
+2021-10-16 23:00:06 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
+2021-10-16 23:00:06 - INFO    :: Thread-1 : Tautulli PlexTV :: Using user-defined URL.
+2021-10-16 23:00:06 - INFO    :: Thread-1 : Tautulli PlexTV :: Selected server: S-DS716 (http://192.168.1.129:32400) (Linux - Version 1.24.2.4973-2b1b51db9)
+2021-10-16 23:00:06 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
+2021-10-16 23:00:06 - DEBUG   :: Thread-1 : Tautulli Monitor :: Checking for active streams.
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Tautulli WebSocket :: Opening websocket.
+2021-10-16 23:00:06 - INFO    :: Thread-1 : Tautulli Users :: Requesting users list refresh...
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Tautulli WebSocket :: Ready
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Check GitHub for updates
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Optimize Tautulli database
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Backup Tautulli database
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Backup Tautulli config
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Refresh Plex server URLs
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Refresh users list
+2021-10-16 23:00:06 - INFO    :: Thread-15 : Scheduled background task: Refresh libraries list
+2021-10-16 23:00:08 - WARNING :: CP Server Thread-12 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
+2021-10-16 23:00:08 - WARNING :: CP Server Thread-13 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
+2021-10-16 23:00:08 - WARNING :: CP Server Thread-9 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
+2021-10-16 23:00:08 - WARNING :: CP Server Thread-14 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
+2021-10-16 23:00:08 - INFO    :: Thread-1 : Tautulli Users :: Users list refreshed.
+2021-10-16 23:00:08 - INFO    :: Thread-1 : Tautulli Libraries :: Requesting libraries list refresh...
+2021-10-16 23:00:08 - INFO    :: Thread-1 : Tautulli Config :: Writing configuration to file
+2021-10-16 23:00:08 - INFO    :: Thread-1 : Tautulli Libraries :: Libraries list refreshed.
+2021-10-16 23:00:44 - DEBUG   :: CP Server Thread-7 : Tautulli PlexTV :: Plex Pass subscription not found.
+2021-10-16 23:00:44 - INFO    :: CP Server Thread-7 : Tautulli Config :: Writing configuration to file
+2021-10-16 23:08:12 - INFO    :: CP Server Thread-12 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 23:08:12 - DEBUG   :: CP Server Thread-14 : Sending test Script notification.
+2021-10-16 23:08:12 - DEBUG   :: CP Server Thread-14 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 23:08:12 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 23:08:12 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{rating_key}', '--blur', '25'], action: test
+2021-10-16 23:08:12 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{rating_key}', '--blur', '25']
+2021-10-16 23:08:12 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 23:08:13 - DEBUG   :: Thread-16 : Tautulli Notifiers :: Subprocess returned with status code 2.
+2021-10-16 23:08:13 - ERROR   :: Thread-16 : Tautulli Notifiers :: Script error: 
   usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
                                   [--blur BLUR]
                                   [--summary_prefix [SUMMARY_PREFIX]] [--remove]
   hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{rating_key}'
-2021-10-16 20:09:07 - INFO    :: Thread-17 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 20:10:03 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:10:03 - DEBUG   :: CP Server Thread-6 : Sending test Script notification.
-2021-10-16 20:10:03 - DEBUG   :: CP Server Thread-6 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 20:10:03 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 20:10:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: [], action: test
-2021-10-16 20:10:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py']
-2021-10-16 20:10:03 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 20:10:04 - DEBUG   :: Thread-19 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 20:10:04 - ERROR   :: Thread-19 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key is required
-2021-10-16 20:10:04 - INFO    :: Thread-19 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 20:10:29 - INFO    :: CP Server Thread-12 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 2 stopped.
-2021-10-16 20:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityProcessor :: Fetching metadata for item ratingKey 2170
-2021-10-16 20:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Removing sessionKey 2 ratingKey 2170 from session queue
-2021-10-16 20:43:50 - INFO    :: CP Server Thread-11 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:43:50 - DEBUG   :: CP Server Thread-5 : Sending test Script notification.
-2021-10-16 20:43:50 - DEBUG   :: CP Server Thread-5 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 20:43:51 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 20:43:51 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: [], action: test
-2021-10-16 20:43:51 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py']
-2021-10-16 20:43:51 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 20:43:51 - DEBUG   :: Thread-21 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 20:43:51 - ERROR   :: Thread-21 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key is required
-2021-10-16 20:43:51 - INFO    :: Thread-21 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 20:44:07 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:44:07 - DEBUG   :: CP Server Thread-6 : Sending test Script notification.
-2021-10-16 20:44:07 - DEBUG   :: CP Server Thread-6 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 20:44:07 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 20:44:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: [], action: test
-2021-10-16 20:44:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py']
-2021-10-16 20:44:07 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 20:44:08 - DEBUG   :: Thread-23 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 20:44:08 - ERROR   :: Thread-23 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key is required
-2021-10-16 20:44:08 - INFO    :: Thread-23 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 20:47:39 - INFO    :: CP Server Thread-8 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 20:47:39 - DEBUG   :: CP Server Thread-9 : Sending test Script notification.
-2021-10-16 20:47:39 - DEBUG   :: CP Server Thread-9 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 20:47:39 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 20:47:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{rating_key}', '--blur', '25'], action: test
-2021-10-16 20:47:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{rating_key}', '--blur', '25']
-2021-10-16 20:47:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 20:47:40 - DEBUG   :: Thread-25 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 20:47:40 - ERROR   :: Thread-25 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{rating_key}'
-2021-10-16 20:47:40 - INFO    :: Thread-25 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 20:53:05 - DEBUG   :: CP Server Thread-10 : Tautulli PlexTV :: Plex Pass subscription not found.
-2021-10-16 20:53:05 - INFO    :: CP Server Thread-10 : Tautulli Config :: Writing configuration to file
-2021-10-16 21:01:01 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 4 started by user 26731653 (****************@********) with ratingKey 2123 (Afl Making Their Mark - Episode 5).
-2021-10-16 21:01:42 - INFO    :: CP Server Thread-5 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:01:42 - DEBUG   :: CP Server Thread-10 : Sending test Script notification.
-2021-10-16 21:01:42 - DEBUG   :: CP Server Thread-10 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:01:42 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:01:42 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: , arguments: ['--rating_key', '{2123}', '--blur', '25'], action: test
-2021-10-16 21:01:42 - DEBUG   :: Thread-2 : Tautulli Notifiers :: No script selected for action 'test', exiting...
-2021-10-16 21:02:39 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:02:39 - DEBUG   :: CP Server Thread-12 : Sending test Script notification.
-2021-10-16 21:02:39 - DEBUG   :: CP Server Thread-12 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:02:39 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:02:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: , arguments: ['--rating_key', '{2117}', '--blur', '25'], action: test
-2021-10-16 21:02:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: No script selected for action 'test', exiting...
-2021-10-16 21:03:06 - INFO    :: CP Server Thread-5 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:04:13 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki S01 E03' (2171, grandparent 2167) added to recently added queue.
-2021-10-16 21:04:25 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki' (2167) done processing metadata.
-2021-10-16 21:06:23 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 5 started by user 26731653 (****************@********) with ratingKey 2123 (Afl Making Their Mark - Episode 5).
-2021-10-16 21:06:39 - INFO    :: CP Server Thread-5 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:07:54 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki S01 E04' (2172, grandparent 2167) added to recently added queue.
-2021-10-16 21:08:06 - DEBUG   :: Thread-15 : Tautulli TimelineHandler :: Library item 'Loki' (2167) done processing metadata.
-2021-10-16 21:08:07 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 7 started by user 26731653 (****************@********) with ratingKey 2170 (Loki - The Variant).
-2021-10-16 21:08:25 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 8 started by user 26731653 (****************@********) with ratingKey 2123 (Afl Making Their Mark - Episode 5).
-2021-10-16 21:08:37 - INFO    :: CP Server Thread-12 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:08:56 - INFO    :: CP Server Thread-7 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:08:56 - DEBUG   :: CP Server Thread-6 : Sending test Script notification.
-2021-10-16 21:08:56 - DEBUG   :: CP Server Thread-6 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:08:56 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:08:56 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{2117}', '--blur', '99'], action: test
-2021-10-16 21:08:56 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{2117}', '--blur', '99']
-2021-10-16 21:08:56 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:08:57 - DEBUG   :: Thread-27 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:08:57 - ERROR   :: Thread-27 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{2117}'
-2021-10-16 21:08:57 - INFO    :: Thread-27 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:09:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 4 stopped.
-2021-10-16 21:09:26 - DEBUG   :: Thread-15 : Tautulli ActivityProcessor :: Play duration for session 4 ratingKey 2123 is 10 secs which is less than 120 seconds, so we're not logging it.
-2021-10-16 21:09:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Removing sessionKey 4 ratingKey 2123 from session queue
-2021-10-16 21:09:54 - INFO    :: CP Server Thread-9 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:09:54 - DEBUG   :: CP Server Thread-8 : Sending test Script notification.
-2021-10-16 21:09:54 - DEBUG   :: CP Server Thread-8 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:09:54 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:09:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{2123}', '--blur', '99'], action: test
-2021-10-16 21:09:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{2123}', '--blur', '99']
-2021-10-16 21:09:54 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:09:55 - DEBUG   :: Thread-29 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:09:55 - ERROR   :: Thread-29 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{2123}'
-2021-10-16 21:09:55 - INFO    :: Thread-29 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:11:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 5 stopped.
-2021-10-16 21:11:26 - DEBUG   :: Thread-15 : Tautulli ActivityProcessor :: Play duration for session 5 ratingKey 2123 is 10 secs which is less than 120 seconds, so we're not logging it.
-2021-10-16 21:11:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Removing sessionKey 5 ratingKey 2123 from session queue
-2021-10-16 21:12:51 - INFO    :: CP Server Thread-11 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:12:51 - DEBUG   :: CP Server Thread-10 : Sending test Script notification.
-2021-10-16 21:12:51 - DEBUG   :: CP Server Thread-10 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:12:51 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:12:51 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{2116}', '--blur', '25'], action: test
-2021-10-16 21:12:51 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{2116}', '--blur', '25']
-2021-10-16 21:12:51 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:12:52 - DEBUG   :: Thread-31 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:12:52 - ERROR   :: Thread-31 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{2116}'
-2021-10-16 21:12:52 - INFO    :: Thread-31 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:12:54 - DEBUG   :: Thread-16 : Tautulli TimelineHandler :: Starting callback for library item 'Loki S01 E03' (2167) after delay.
-2021-10-16 21:12:54 - DEBUG   :: Thread-16 : Tautulli TimelineHandler :: Library item 'Loki - Season 1' (2168) added to Plex.
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'on_created'.
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Checking global notification conditions.
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Global notification conditions evaluated to 'True'.
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Checking custom notification conditions for notifier_id 1.
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: {1} media_type | is | 'show or season or episode' > 'season' > False
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Condition logic [blank]: {1} > False
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Custom conditions evaluated to 'False'. Conditions: [False].
-2021-10-16 21:12:54 - DEBUG   :: Thread-3 : Tautulli NotificationHandler :: Custom notification conditions not satisfied, skipping notifier_id 1.
-2021-10-16 21:12:54 - DEBUG   :: Thread-16 : Added 3 items to the recently_added database table.
-2021-10-16 21:13:18 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:13:18 - DEBUG   :: CP Server Thread-5 : Sending test Script notification.
-2021-10-16 21:13:18 - DEBUG   :: CP Server Thread-5 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:13:18 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:13:18 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '{2116}', '--blur', '25'], action: test
-2021-10-16 21:13:18 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '{2116}', '--blur', '25']
-2021-10-16 21:13:18 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:13:19 - DEBUG   :: Thread-34 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:13:19 - ERROR   :: Thread-34 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{2116}'
-2021-10-16 21:13:19 - INFO    :: Thread-34 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:17:38 - INFO    :: CP Server Thread-12 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:17:38 - DEBUG   :: CP Server Thread-7 : Sending test Script notification.
-2021-10-16 21:17:38 - DEBUG   :: CP Server Thread-7 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:17:38 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:17:38 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['hide_episode_spoilers.py', '--rating_key', '{2116}', '--blur', '25'], action: test
-2021-10-16 21:17:38 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', 'hide_episode_spoilers.py', '--rating_key', '{2116}', '--blur', '25']
-2021-10-16 21:17:38 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:17:39 - DEBUG   :: Thread-36 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:17:39 - ERROR   :: Thread-36 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{2116}'
-2021-10-16 21:17:39 - INFO    :: Thread-36 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 8 stopped.
-2021-10-16 21:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityProcessor :: Play duration for session 8 ratingKey 2123 is 10 secs which is less than 120 seconds, so we're not logging it.
-2021-10-16 21:17:56 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Removing sessionKey 8 ratingKey 2123 from session queue
-2021-10-16 21:18:54 - INFO    :: CP Server Thread-10 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:18:55 - DEBUG   :: CP Server Thread-13 : Sending test Script notification.
-2021-10-16 21:18:55 - DEBUG   :: CP Server Thread-13 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:18:55 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:18:55 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['hide_episode_spoilers.py', '--rating_key', '{rating_key}', '--blur', '25'], action: test
-2021-10-16 21:18:55 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', 'hide_episode_spoilers.py', '--rating_key', '{rating_key}', '--blur', '25']
-2021-10-16 21:18:55 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:18:55 - DEBUG   :: Thread-38 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:18:55 - ERROR   :: Thread-38 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: argument --rating_key: invalid int value: '{rating_key}'
-2021-10-16 21:18:55 - INFO    :: Thread-38 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:21:46 - INFO    :: CP Server Thread-11 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:22:56 - WARNING :: CP Server Thread-7 : Failed to get image /library/metadata/2147/thumb, falling back to poster.
-2021-10-16 21:22:56 - WARNING :: CP Server Thread-13 : Failed to get image /library/metadata/2150/thumb, falling back to poster.
-2021-10-16 21:22:56 - WARNING :: CP Server Thread-10 : Failed to get image /library/metadata/2129/thumb, falling back to poster.
-2021-10-16 21:22:56 - WARNING :: CP Server Thread-5 : Failed to get image /library/metadata/2116/thumb, falling back to poster.
-2021-10-16 21:23:24 - INFO    :: CP Server Thread-10 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:23:24 - DEBUG   :: CP Server Thread-8 : Sending test Script notification.
-2021-10-16 21:23:24 - DEBUG   :: CP Server Thread-8 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:23:24 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:23:24 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['hide_episode_spoilers.py', '--rating_key', '2167', '--', 'blur', '25'], action: test
-2021-10-16 21:23:24 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', 'hide_episode_spoilers.py', '--rating_key', '2167', '--', 'blur', '25']
-2021-10-16 21:23:24 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:23:25 - DEBUG   :: Thread-40 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:23:25 - ERROR   :: Thread-40 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: unrecognized arguments: hide_episode_spoilers.py -- blur 25
-2021-10-16 21:23:25 - INFO    :: Thread-40 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:25:29 - INFO    :: CP Server Thread-13 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:26:13 - INFO    :: CP Server Thread-11 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:26:29 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:26:29 - DEBUG   :: CP Server Thread-10 : Sending test Script notification.
-2021-10-16 21:26:29 - DEBUG   :: CP Server Thread-10 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:26:29 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:26:29 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['hide_episode_spoilers.py', '--rating_key', '2169', '--', 'blur', '90'], action: test
-2021-10-16 21:26:29 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', 'hide_episode_spoilers.py', '--rating_key', '2169', '--', 'blur', '90']
-2021-10-16 21:26:29 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:26:30 - DEBUG   :: Thread-42 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:26:30 - ERROR   :: Thread-42 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: unrecognized arguments: hide_episode_spoilers.py -- blur 90
-2021-10-16 21:26:30 - INFO    :: Thread-42 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:26:35 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 10 started by user 26731653 (****************@********) with ratingKey 2123 (Afl Making Their Mark - Episode 5).
-2021-10-16 21:33:29 - INFO    :: CP Server Thread-14 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:33:47 - INFO    :: CP Server Thread-10 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:34:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Session 10 stopped.
-2021-10-16 21:34:26 - DEBUG   :: Thread-15 : Tautulli ActivityProcessor :: Play duration for session 10 ratingKey 2123 is 10 secs which is less than 120 seconds, so we're not logging it.
-2021-10-16 21:34:26 - DEBUG   :: Thread-15 : Tautulli ActivityHandler :: Removing sessionKey 10 ratingKey 2123 from session queue
-2021-10-16 21:34:29 - INFO    :: CP Server Thread-9 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
-2021-10-16 21:34:29 - DEBUG   :: CP Server Thread-13 : Sending test Script notification.
-2021-10-16 21:34:29 - DEBUG   :: CP Server Thread-13 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
-2021-10-16 21:34:29 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
-2021-10-16 21:34:29 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['hide_episode_spoilers.py', '--rating_key', '2169', '--blur', '25'], action: test
-2021-10-16 21:34:29 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', 'hide_episode_spoilers.py', '--rating_key', '2169', '--blur', '25']
-2021-10-16 21:34:29 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
-2021-10-16 21:34:29 - DEBUG   :: Thread-44 : Tautulli Notifiers :: Subprocess returned with status code 2.
-2021-10-16 21:34:29 - ERROR   :: Thread-44 : Tautulli Notifiers :: Script error: 
-  usage: hide_episode_spoilers.py [-h] --rating_key RATING_KEY [--image IMAGE]
-                                  [--blur BLUR]
-                                  [--summary_prefix [SUMMARY_PREFIX]] [--remove]
-  hide_episode_spoilers.py: error: unrecognized arguments: hide_episode_spoilers.py
-2021-10-16 21:34:29 - INFO    :: Thread-44 : Tautulli Notifiers :: Script notification sent.
-2021-10-16 21:34:32 - INFO    :: CP Server Thread-5 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 23:08:13 - INFO    :: Thread-16 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 23:08:38 - INFO    :: CP Server Thread-12 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 23:08:39 - DEBUG   :: CP Server Thread-14 : Sending test Script notification.
+2021-10-16 23:08:39 - DEBUG   :: CP Server Thread-14 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 23:08:39 - INFO    :: Thread-3 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 23:08:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2168', '--blur', '25'], action: test
+2021-10-16 23:08:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2168', '--blur', '25']
+2021-10-16 23:08:39 - DEBUG   :: Thread-3 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 23:08:40 - DEBUG   :: Thread-18 : Tautulli Notifiers :: Subprocess returned with status code 1.
+2021-10-16 23:08:40 - ERROR   :: Thread-18 : Tautulli Notifiers :: Script error: 
+  Traceback (most recent call last):
+    File "/config/scripts/hide_episode_spoilers.py", line 122, in <module>
+      with open(episode_artwork, 'wb') as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/volume1/Plex/Library/TV Shows/Loki/Loki S01E01.png'
+2021-10-16 23:08:40 - INFO    :: Thread-18 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 23:11:46 - INFO    :: CP Server Thread-6 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
+2021-10-16 23:11:46 - DEBUG   :: CP Server Thread-12 : Sending test Script notification.
+2021-10-16 23:11:46 - DEBUG   :: CP Server Thread-12 : Tautulli NotificationHandler :: Notifiers enabled for notify_action 'test' (manual trigger).
+2021-10-16 23:11:46 - INFO    :: Thread-2 : Tautulli NotificationHandler :: Preparing notification for notifier_id 1.
+2021-10-16 23:11:46 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Trying to run notify script: /config/scripts/hide_episode_spoilers.py, arguments: ['--rating_key', '2168', '--blur', '25'], action: test
+2021-10-16 23:11:46 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Full script is: ['/usr/bin/python3', '/config/scripts/hide_episode_spoilers.py', '--rating_key', '2168', '--blur', '25']
+2021-10-16 23:11:46 - DEBUG   :: Thread-2 : Tautulli Notifiers :: Executing script in a new thread.
+2021-10-16 23:11:47 - DEBUG   :: Thread-20 : Tautulli Notifiers :: Subprocess returned with status code 1.
+2021-10-16 23:11:47 - ERROR   :: Thread-20 : Tautulli Notifiers :: Script error: 
+  Traceback (most recent call last):
+    File "/config/scripts/hide_episode_spoilers.py", line 122, in <module>
+      with open(episode_artwork, 'wb') as f:
+  FileNotFoundError: [Errno 2] No such file or directory: '/volume1/Plex/Library/TV Shows/Loki/Loki S01E01.png'
+2021-10-16 23:11:47 - INFO    :: Thread-20 : Tautulli Notifiers :: Script notification sent.
+2021-10-16 23:12:01 - INFO    :: CP Server Thread-5 : Tautulli Notifiers :: Updated notification agent: Script (notifier_id 1).
